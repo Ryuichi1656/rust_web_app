@@ -1,0 +1,12 @@
+version: "3.2"
+services:
+    rust:
+        build: ./docker/rust
+        container_name: rust_web_app
+        environment:
+            - TZ=Asia/Tokyo
+            - LANG=ja_JP.UTF-8
+            - USER=tatsu
+        tty: true
+        volumes:
+            - ./src:/src
