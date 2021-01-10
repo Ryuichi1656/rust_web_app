@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>テスト</title>
+    </head>
+    <body>
+        <h1>テストページ</h1>
+        {% for entry in entries %}
+        <div>
+            id: {{entry.id}}, text: {{entry.text}}
+        </div>
+        {% endfor %}
+    </body>
+</html>
