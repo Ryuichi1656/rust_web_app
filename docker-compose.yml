@@ -10,3 +10,5 @@ services:
         tty: true
         volumes:
             - ./src:/src
+        ports:
+            - 8088:8088
